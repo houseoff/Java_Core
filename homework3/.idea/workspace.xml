@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4945c831-ce4d-4bf2-b27c-f800f12fdf2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/model/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/model/EmployeesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/model/EmployeesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/model/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/model/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/presenter/MainPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/presenter/MainPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/view/command/GetEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/view/command/GetEmployees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/view/command/GetFilteredEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/view/command/GetFilteredEmployees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/view/menu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/view/menu/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/view/ui/MainConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/hw3/view/ui/MainConsoleUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +83,7 @@
       <workItem from="1705110818997" duration="728000" />
       <workItem from="1705111606574" duration="14716000" />
       <workItem from="1705129409100" duration="741000" />
-      <workItem from="1705135862168" duration="6455000" />
+      <workItem from="1705135862168" duration="7510000" />
     </task>
     <servers />
   </component>

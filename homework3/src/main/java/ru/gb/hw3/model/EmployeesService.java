@@ -32,6 +32,7 @@ public class EmployeesService {
     private Collection<Employee> filterBySalaryDesc(double salary) {
         return employees.stream()
                 .filter(e -> e.salary < salary)
+                .sorted(new EmployeeComparatorBySalaryDesc())
                 .toList();
     }
 

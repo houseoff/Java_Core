@@ -1,9 +1,7 @@
 package ru.gb.hw3.view.ui;
 
 import ru.gb.hw3.presenter.MainPresenter;
-import ru.gb.hw3.view.menu.MainMenu;
-import ru.gb.hw3.view.menu.MainMenuWithoutEmployees;
-import ru.gb.hw3.view.menu.Menu;
+import ru.gb.hw3.view.menu.*;
 
 public class MainConsoleUI extends ConsoleUI {
     private final MainPresenter presenter;
@@ -61,7 +59,15 @@ public class MainConsoleUI extends ConsoleUI {
 
     // Работа с презентером
     public void getEmployees() {
-        presenter.getEmployees();
+        previousMenu = currentMenu;
+        currentMenu = new ShowEmployeesMenu(this);
+        showMenu(currentMenu);
+    }
+
+    public void getFilteredEmployees() {
+        previousMenu = currentMenu;
+        currentMenu = new ShowFilteredEmployeesMenu(this);
+        showMenu(currentMenu);
     }
 
     public void setEmployees() {
@@ -71,8 +77,35 @@ public class MainConsoleUI extends ConsoleUI {
     public void raiseSalary() {
         presenter.raiseSalary(input.getDouble(
                 "Введите сумму для индексации",
-                "^(0\\.|[1-9](\\d+)?)\\.?(\\d+)?$",
+                "^(0\\.\\d+|[1-9]([0-9]*)?)(\\.\\d+|(\\d+)?)$",
                 "Ошибка: вы ввели неверное число")
         );
+    }
+
+    public void sortByAge() {
+        presenter.sortByAge();
+    }
+
+    public void sortById() {
+        presenter.sortById();
+    }
+
+    public void sortByPost() {
+        presenter.sortByPost();
+    }
+
+    public void sortBySalary() {
+        presenter.sortBySalary();
+    }
+
+    public void sortByName() {
+        presenter.sortByName();
+    }
+
+    public void filterBySalaryDesc() {
+        presenter.filterBySalaryDesc(input.getDouble(
+                "Введите сумму для сравнения",
+                "^(0\\.\\d+|[1-9]([0-9]*)?)(\\.\\d+|(\\d+)?)$",
+                "Ошибка: вы ввели неверное число"));
     }
 }

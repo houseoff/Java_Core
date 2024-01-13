@@ -8,7 +8,7 @@ public class GetEmployees extends Command {
 
     public GetEmployees(MainConsoleUI consoleUI) {
         this.consoleUI = consoleUI;
-        this.description = "Отобразить список работников";
+        this.description = "Отобразить весь список работников";
     }
 
     @Override

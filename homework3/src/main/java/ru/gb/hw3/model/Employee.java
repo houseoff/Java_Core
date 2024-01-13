@@ -1,18 +1,24 @@
 package ru.gb.hw3.model;
 
 public class Employee {
+    protected int id;
     protected String name;
     protected String post;
     protected String phone;
     protected double salary;
     protected int age;
 
-    public Employee(String name, String post, String phone, double salary, int age) {
+    public Employee(int id, String name, String post, String phone, double salary, int age) {
+        this.id = id;
         this.name = name;
         this.post = post;
         this.phone = phone;
         this.salary = salary;
         this.age = age;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -58,7 +64,8 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", post='" + post + '\'' +
                 ", phone='" + phone + '\'' +
                 ", salary=" + salary +
